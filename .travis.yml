@@ -1,1 +1,13 @@
-        - "./.travis/python_test.py"
+env:
+  global:
+    - PULL_REQUEST_BRANCH=${TRAVIS_PULL_REQUEST_BRANCH}
+
+matrix:
+  include:
+    - language: python
+      python: "3.6"
+
+      name: "Python Test"
+
+      script:
+- "./.travis/python_test.py"
