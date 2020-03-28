@@ -10,4 +10,4 @@ matrix:
       name: "Python Test"
 
       script:
-- "./.travis/python_test.py"
+      - "./.travis/python_test.py"
